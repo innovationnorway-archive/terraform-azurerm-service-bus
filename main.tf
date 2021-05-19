@@ -8,6 +8,7 @@ resource "azurerm_servicebus_namespace" "main" {
   resource_group_name = data.azurerm_resource_group.main.name
   sku                 = var.sku
   capacity            = var.capacity
+  zone_redundant      = var.zone_redundant
   tags                = var.tags
 }
 
