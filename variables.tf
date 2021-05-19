@@ -32,6 +32,12 @@ variable "authorization_rules" {
   description = "List of namespace authorization rules."
 }
 
+variable "zone_redundant" {
+  type        = string
+  default     = "false"
+  description = "(Optional) Whether or not this resource is zone redundant. sku needs to be Premium. Defaults to false."
+}
+
 variable "queues" {
   type        = any
   default     = []
