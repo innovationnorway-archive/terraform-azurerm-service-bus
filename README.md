@@ -106,6 +106,7 @@ module "service_bus" {
 | `resource_group_name` | `string` | The name of an existing resource group. |
 | `sku` | `string` | The SKU of the namespace. The options are: `Basic`, `Standard`, `Premium`. Default: `Standard`. |
 | `capacity` | `number` | The number of message units. The options are: `1`, `2`, `4`. |
+| `zone_redundant` | `bool` | (Optional) Whether or not this resource is zone redundant. sku needs to be `Premium`. Defaults to `false`. |
 | `authorization_rules` | `list` | List of namespace authorization rules. |
 | `topics` | `list` | List of `topics`. |
 | `queues` | `list` | List of `queues`. |
