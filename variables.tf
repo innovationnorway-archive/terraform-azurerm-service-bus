@@ -33,8 +33,8 @@ variable "authorization_rules" {
 }
 
 variable "zone_redundant" {
-  type        = string
-  default     = "false"
+  type        = bool
+  default     = false
   description = "(Optional) Whether or not this resource is zone redundant. sku needs to be Premium. Defaults to false."
 }
 
